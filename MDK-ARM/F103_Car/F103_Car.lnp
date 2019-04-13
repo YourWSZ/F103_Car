@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"f103_car\startup_stm32f103xb.o"
+"f103_car\main.o"
+"f103_car\gpio.o"
+"f103_car\tim.o"
+"f103_car\usart.o"
+"f103_car\stm32f1xx_it.o"
+"f103_car\stm32f1xx_hal_msp.o"
+"f103_car\stm32f1xx_hal_gpio_ex.o"
+"f103_car\stm32f1xx_hal_tim.o"
+"f103_car\stm32f1xx_hal_tim_ex.o"
+"f103_car\stm32f1xx_hal_uart.o"
+"f103_car\stm32f1xx_hal.o"
+"f103_car\stm32f1xx_hal_rcc.o"
+"f103_car\stm32f1xx_hal_rcc_ex.o"
+"f103_car\stm32f1xx_hal_gpio.o"
+"f103_car\stm32f1xx_hal_dma.o"
+"f103_car\stm32f1xx_hal_cortex.o"
+"f103_car\stm32f1xx_hal_pwr.o"
+"f103_car\stm32f1xx_hal_flash.o"
+"f103_car\stm32f1xx_hal_flash_ex.o"
+"f103_car\system_stm32f1xx.o"
+"f103_car\pwm.o"
+"f103_car\us100.o"
+--library_type=microlib --strict --scatter "F103_Car\F103_Car.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "F103_Car.map" -o F103_Car\F103_Car.axf
