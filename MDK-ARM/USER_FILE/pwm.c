@@ -22,7 +22,15 @@ void PWM_SetDuty(TIM_HandleTypeDef *tim,uint32_t tim_channel,float duty)  //PWMÕ
 	}
 
 
-
+/************************************Ð¡³µÇý¶¯Òý½ÅÉè¶¨***************************************
+	PWMA -> PA8 (TIM1_CH1)
+	PWMB -> PA9 (TIM1_CH2)
+	AIN1 -> PB15
+	AIN2 -> PB14
+	BIN1 -> PB13
+	BIN2 -> PB12
+	
+*******************************************************************************************/
 void Set_Pwm(int motor_a,int motor_b) //PWMÉè¶¨º¯Êý
 {
 	    float duty; //PWM´óÐ¡£¬×î´ó1000£¬×îÐ¡1
@@ -66,7 +74,8 @@ void Set_Pwm(int motor_a,int motor_b) //PWMÉè¶¨º¯Êý
 
 }
 
-void stop()
+
+void stop()//Í£³µº¯Êý
 {
 	PWM_SetDuty(&htim1,TIM_CHANNEL_1,0);
 	PWM_SetDuty(&htim1,TIM_CHANNEL_2,0);
