@@ -29,4 +29,5 @@ f103_car\pwm.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
 f103_car\pwm.o: ../Inc/pwm.h
 f103_car\pwm.o: ../Inc/us100.h
 f103_car\pwm.o: ../Inc/beep.h
+f103_car\pwm.o: ../Inc/control.h
 f103_car\pwm.o: ../Inc/tim.h

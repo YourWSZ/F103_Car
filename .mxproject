@@ -1,7 +1,7 @@
 [PreviousGenFiles]
-HeaderPath=C:/Users/Administrator.DESKTOP-4RS6HJC/Desktop/STM32 Projects/F103_Car/Inc
+HeaderPath=C:/Users/84145/Desktop/STM32 Projects/F103_Car/Inc
 HeaderFiles=gpio.h;tim.h;usart.h;stm32f1xx_it.h;stm32f1xx_hal_conf.h;main.h;
-SourcePath=C:/Users/Administrator.DESKTOP-4RS6HJC/Desktop/STM32 Projects/F103_Car/Src
+SourcePath=C:/Users/84145/Desktop/STM32 Projects/F103_Car/Src
 SourceFiles=gpio.c;tim.c;usart.c;stm32f1xx_it.c;stm32f1xx_hal_msp.c;main.c;
 
 [PreviousLibFiles]

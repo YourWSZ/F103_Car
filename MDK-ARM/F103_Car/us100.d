@@ -30,3 +30,4 @@ f103_car\us100.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
 f103_car\us100.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
 f103_car\us100.o: ../Inc/pwm.h
 f103_car\us100.o: ../Inc/beep.h
+f103_car\us100.o: ../Inc/control.h

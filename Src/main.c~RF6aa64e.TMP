@@ -103,16 +103,11 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	
-	  /*·äÃùÆ÷²âÊÔ´úÂë	  
-	  beep_ON();
-	  HAL_Delay(500);
-	  beep_OFF();
-	  HAL_Delay(500);*/
-	  
-	  
-	  
-	  
+//	  beep_ON();
+
+//	  HAL_Delay(500);
+//	  beep_OFF();
+//	  HAL_Delay(500);
   }
   /* USER CODE END 3 */
 }

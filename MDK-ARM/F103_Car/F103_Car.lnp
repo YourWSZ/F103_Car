@@ -23,6 +23,7 @@
 "f103_car\pwm.o"
 "f103_car\us100.o"
 "f103_car\beep.o"
+"f103_car\control.o"
 --library_type=microlib --strict --scatter "F103_Car\F103_Car.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

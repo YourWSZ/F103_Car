@@ -35,6 +35,7 @@ extern "C" {
 #include "pwm.h"
 #include "us100.h"
 #include "beep.h"
+#include "control.h"
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/
