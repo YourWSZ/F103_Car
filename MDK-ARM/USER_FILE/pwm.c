@@ -10,7 +10,7 @@ void PWM_Init()   //PWM初始化
 	HAL_TIM_PWM_Start(&htim1,TIM_CHANNEL_2);
 }
 
-void PWM_SetDuty(TIM_HandleTypeDef *tim,uint32_t tim_channel,float duty)  //PWM占空比设定函数   duty最大为1000，限幅900
+void PWM_SetDuty(TIM_HandleTypeDef *tim,uint32_t tim_channel,float duty)  //PWM占空比设定函数   duty最大为1000
 	{
 	    switch(tim_channel)
 			{
