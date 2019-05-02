@@ -1,8 +1,7 @@
 #ifndef __CONTROL_H
 #define __CONTROL_H
 
-//float Velocity_KP=10,Velocity_KI=10;	                        //速度控制PID参数
-//float Position_KP=40,Position_KI=0,Position_KD=40;              //位置控制PID参数
+
 /*
 
 红外传感器引脚设置：

@@ -70,6 +70,7 @@ int main(void)
   /* USER CODE BEGIN 1 */
 
   /* USER CODE END 1 */
+  
 
   /* MCU Configuration--------------------------------------------------------*/
 
@@ -104,11 +105,11 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 	
-	  /*·äÃùÆ÷²âÊÔ´úÂë	  
+	  //·äÃùÆ÷²âÊÔ´úÂë	  
 	  beep_ON();
-	  HAL_Delay(500);
+	  HAL_Delay(1000);
 	  beep_OFF();
-	  HAL_Delay(500);*/
+	  HAL_Delay(1000);
 	  
 	  
 	  
@@ -129,7 +130,7 @@ void SystemClock_Config(void)
   /** Initializes the CPU, AHB and APB busses clocks 
   */
   RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE;
-  RCC_OscInitStruct.HSEState = RCC_HSE_BYPASS;
+  RCC_OscInitStruct.HSEState = RCC_HSE_ON;
   RCC_OscInitStruct.HSEPredivValue = RCC_HSE_PREDIV_DIV1;
   RCC_OscInitStruct.HSIState = RCC_HSI_ON;
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
