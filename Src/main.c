@@ -92,8 +92,10 @@ int main(void)
   MX_GPIO_Init();
   MX_TIM1_Init();
   MX_USART1_UART_Init();
+  MX_TIM2_Init();
+  MX_USART3_UART_Init();
   /* USER CODE BEGIN 2 */
-
+  HAL_TIM_Base_Start_IT(&htim2);
   PWM_Init();
   /* USER CODE END 2 */
 
@@ -106,10 +108,10 @@ int main(void)
     /* USER CODE BEGIN 3 */
 	
 	  //·äÃùÆ÷²âÊÔ´úÂë	  
-	  beep_ON();
+/*	  beep_ON();
 	  HAL_Delay(1000);
 	  beep_OFF();
-	  HAL_Delay(1000);
+	  HAL_Delay(1000);   */
 	  
 	  
 	  
@@ -156,7 +158,13 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
-
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef*htim)
+{
+	if(htim -> Instance == htim2.Instance)
+	{
+		HAL_GPIO_TogglePin(GPIOC,GPIO_PIN_13);
+	}
+}
 /* USER CODE END 4 */
 
 /**
